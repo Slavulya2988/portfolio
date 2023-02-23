@@ -27,4 +27,21 @@
         font-size: 48px;
     }
 
+    &__section-title {
+        text-align: center;
+        @include before_circle;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__section-subtitle {
+        text-align: center;
+    }
+
 }
